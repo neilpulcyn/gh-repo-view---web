@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+body {
+  background-color:rgb(0,0,0);
+  background-image:url(http://www.zingerbugimages.com/backgrounds/colorful_starry_sky_glitter_background_seamless.gif);
+  background-position:top left;
+  background-repeat:repeat;
+  background-attachment:fixed;
+  color: green;
+  font-family: 'Irish Grover', cursive;
+  font-size: 30px;
+  line-height: 1.6;
+  letter-spacing: 10px;
+}
+
+h1,h2,h3 {
+  color: gold;
+  font-family: 'Irish Grover', cursive;
+  font-size: 30px;
+  line-height: 1.6;
+  letter-spacing: 10px;
+  border
+}
+
+p {
+  color: purple;
+}
+
+li {
+  color: black;
+}
+
+.card1 {
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(43, 226, 195);
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border-radius: 50px;
+}
+
+.card2 {
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(43, 226, 195);
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  border-radius: 50px;
+  margin-top: 20px;
+}
+#profilepicture {
+  border-radius: 150px;
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.container {
+  margin: auto 0
+}
+
+a {
+  text-decoration:none;
+  color:#FFF;
+}
+.rainbow-button {
+  width:calc(20vw + 6px);
+  height:calc(8vw + 6px);
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  border-radius:5px;
+  display: inline-block;
+  align-items:center;
+  justify-content:center;
+  text-transform:uppercase;
+  font-size:3vw;
+  font-weight:bold;
+}
+
+.rainbow-button:hover {
+  animation:slidebg 4s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:20vw;
+  }
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 480px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+  #profilepicture {
+    border-radius: 150px;
+    height: 100px;
+    width: 500px;
+    object-fit: cover;
+  }
+  .card2 {
+  width: 100px;
+  }
+}
+
+#banner {
+   background-size: cover;
+   background-color: rgb(43, 226, 195);
+   text-align: center;
+}
